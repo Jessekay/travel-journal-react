@@ -1,12 +1,14 @@
 import locate from "../assets/locate.png"
-export default function Body(props) {
+export default function Entry(props) {
+  console.log(props);
+  
   return (
      <main>
       <div className="flex gap-8 p-8">
         <img
           className="w-52 h-72 object-cover rounded-xl shrink-0"
-          src={props.src}
-          alt={props.alt}
+          src={props.img.src}
+          alt={props.img.alt}
         />
 
         <div className="flex flex-col">
